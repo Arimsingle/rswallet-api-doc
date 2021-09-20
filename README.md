@@ -5,7 +5,7 @@
 * [API documentation](#api-documentation)
 * [Error codes](#error-codes)
 # Base URL
-* The base URL is: https://rs-wallet-dev-4j5xzwf4ja-uc.a.run.app
+* The base URL is: https://rs-wallet-dev.bbtserv.com/
 # Endpoint types
 ### Secure endpoints
 All secure endpoints require [authentication](#constructing-the-request) and use the method GET.
