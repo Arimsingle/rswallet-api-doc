@@ -300,7 +300,7 @@ revoke address blacklist
 #### Description:
 token set owner
 #### Query:
-* `newowner`		**string**		router contract address (require)
+* `newowner`		**string**		new owner address (require)
 #### Example:
 ```
 {
@@ -398,7 +398,7 @@ hot wallet transfer
 #### Description:
 hot set owner
 #### Query:
-* `owner`		**string**	  owner address (require)
+* `newowner`		**string**	  new owner address (require)
 #### Example:
 ```
 {
@@ -429,8 +429,8 @@ hot set owner
 #### Description:
 router transfer
 #### Query:
-* `from`		**string**		hotwallet address (require)
-* `to`		**string**		hotwallet address (require)
+* `from`		**string**		from address (require)
+* `to`		**string**		to address (require)
 * `fee`		**number**		fee (require)
 * `amount`		**number**		amount (require)
 #### Example:
