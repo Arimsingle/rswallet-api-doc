@@ -13,7 +13,8 @@ All secure endpoints require [authentication](#constructing-the-request) and use
 * [GET /api/token/mint-history](#get-apiminthistory)
 * [GET /api/token/burn-history](#get-apiburnhistory)
 * [GET /api/token/transfer-history](#get-apitransferhistory)
-* [GET /api/token/balance](#get-apitransferhistory)
+* [GET /api/token/balance](#get-apibalance)
+* [GET /api/tx-status](#get-apitx-status)
 
 All secure endpoints require [authentication](#constructing-the-request) and use the method POST.
 * [POST /api/token/mint](#get-apimint)
@@ -125,6 +126,20 @@ check balance
     }
 }
 ```
+### GET /api/tx-status
+#### Description:
+check transaction status
+#### Query(URL):
+* `tx-hash`		**string**		The transaction hash (require)
+#### Example:
+?tx-hash=0x5a049827e49c8ad38a50a8007d054d25b69ba9440b0c81d0774a9212d44ef221
+### Response
+```
+{
+    "error": 0,
+    "result": "success"
+}
+```
 ### POST /api/token/mint
 #### Description:
 mint token
@@ -223,7 +238,7 @@ transfer token
         "currency": "POP",
         "user_agent": "PostmanRuntime/7.28.3",
         "req_method": "POST",
-        "url_path": "/api/hot/transfer",
+        "url_path": "/api/token/transfer",
         "time": "Wed Sep 01 2021 17:51:24",
         "transaction_hash": "0x66145045a18b573661286e85d598ffaab722b6b6ae241fac0e204cd010f35826",
         "block_hash": "0x3df6792cbed149e4de202e9d3b638296d80beb480a71f25395a3c48520829e05",
