@@ -642,5 +642,13 @@ Code | Description
 54 | Insufficient kub
 55 | Blacklist address
 56 | Over hardcap
+57 | Token id is not exist
+58 | Origin phone number not found
+59 | No data in database
+60 | Bad decrypt
+61 | Already add whitelist address
+62 | Whitelist address is not exist
+63 | Amount can not be zero
+64 | Old Transaction is running or pending
 90 | Server error (please contact support)
 
